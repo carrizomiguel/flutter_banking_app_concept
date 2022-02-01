@@ -1,3 +1,4 @@
+import 'package:banking_app/ui/app/app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Banking App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFF1B191A),
+      ),
+      home: const AppView(),
     );
   }
 }

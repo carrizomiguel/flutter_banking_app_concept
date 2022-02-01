@@ -1,3 +1,4 @@
+import 'package:banking_app/ui/home/views/components/home_custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,6 +15,8 @@ class HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      bottomNavigationBar: HomeCustomBottomNavBar(),
+    );
   }
 }
