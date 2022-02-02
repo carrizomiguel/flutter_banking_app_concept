@@ -1,3 +1,4 @@
+import 'package:banking_app/ui/home/views/components/home_custom_app_bar.dart';
 import 'package:banking_app/ui/home/views/components/home_custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,15 @@ class HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: HomeCustomBottomNavBar(),
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: const [
+            HomeCustomAppBar()
+          ],
+        ),
+      ),
+      bottomNavigationBar: const HomeCustomBottomNavBar(),
     );
   }
 }
