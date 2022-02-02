@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeCustomBottomNavBar extends StatefulWidget {
   const HomeCustomBottomNavBar({Key? key}) : super(key: key);
@@ -10,16 +11,16 @@ class HomeCustomBottomNavBar extends StatefulWidget {
 class _HomeCustomBottomNavBarState extends State<HomeCustomBottomNavBar> {
   final Map<String, Map<String, dynamic>> _items = const {
     'Home': {
-      'icon': Icons.home,
+      'icon': 'assets/icons/home.svg',
     },
     'Notifications': {
-      'icon': Icons.notifications,
+      'icon': 'assets/icons/notification.svg',
     },
     'Statistics': {
-      'icon': Icons.pie_chart,
+      'icon': 'assets/icons/pie_chart.svg',
     },
     'Profile': {
-      'icon': Icons.person,
+      'icon': 'assets/icons/user.svg',
     },
   };
 
@@ -51,15 +52,16 @@ class _HomeCustomBottomNavBarState extends State<HomeCustomBottomNavBar> {
                         key,
                         Column(
                           children: [
-                            IconButton(
-                              onPressed: () => _changeView(key),
-                              icon: Icon(
+                            InkWell(
+                              onTap: () => _changeView(key),
+                              child: SvgPicture.asset(
                                 value['icon'],
-                                size: 28,
+                                height: 25,
+                                color: _viewIs == key
+                                    ? const Color(0xFFEBDCDA)
+                                    : const Color(0xFF595758),
                               ),
-                              color: _viewIs == key
-                                  ? const Color(0xFFEBDCDA)
-                                  : Colors.grey.shade600,
+                              borderRadius: BorderRadius.circular(99),
                             ),
                             const Spacer(),
                             AnimatedContainer(
