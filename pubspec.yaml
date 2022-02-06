@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  card_swiper: ^2.0.1
   cupertino_icons: ^1.0.2
-  flutter_swiper: ^1.1.6
   flutter_svg: ^1.0.3
 
 dev_dependencies:
