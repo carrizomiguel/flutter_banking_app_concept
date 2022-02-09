@@ -36,7 +36,7 @@ class CardSwiper extends StatelessWidget {
         );
       },
       itemWidth: double.infinity,
-      itemHeight: 250,
+      itemHeight: 240,
       layout: SwiperLayout.TINDER,
     );
   }

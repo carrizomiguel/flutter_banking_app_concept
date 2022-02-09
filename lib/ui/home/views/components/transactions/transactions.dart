@@ -63,12 +63,12 @@ class LastTransactionsItems extends StatelessWidget {
       'currency': 'USD',
       'icon': '🍔',
     },
-    // 'Carwash': {
-    //   'time': '15:00 PM',
-    //   'amount': '100.00',
-    //   'currency': 'USD',
-    //   'icon': '🚗',
-    // },
+    'Carwash': {
+      'time': '15:00 PM',
+      'amount': '100.00',
+      'currency': 'USD',
+      'icon': '🚗',
+    },
   };
 
   @override
