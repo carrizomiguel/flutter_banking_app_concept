@@ -1,16 +1,14 @@
-# banking_app
+# Banking Concept App
 
-A new Flutter project.
+This Flutter Application was based on the @ui.withpourya's prototype.
 
-## Getting Started
+- [Instagram @ui.withpourya](https://www.instagram.com/ui.withpourya/)
 
-This project is a starting point for a Flutter application.
+## App ScreenShots
 
-A few resources to get you started if this is your first Flutter project:
+<img src="assets/screenshots/home.png" height="500"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Prototype Screenshot
+### - [Instagram post](https://www.instagram.com/p/CR_v_RnDFRl/?utm_source=ig_web_copy_link)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="assets/screenshots/prototype.jpeg" height="500"/>
