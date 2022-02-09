@@ -2,6 +2,7 @@ import 'package:banking_app/ui/home/views/components/cards/action_buttons.dart';
 import 'package:banking_app/ui/home/views/components/cards/card_swiper.dart';
 import 'package:banking_app/ui/home/views/components/home_custom_app_bar.dart';
 import 'package:banking_app/ui/home/views/components/home_custom_bottom_nav_bar.dart';
+import 'package:banking_app/ui/home/views/components/transactions/transactions.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -25,6 +26,7 @@ class HomeContent extends StatelessWidget {
             HomeCustomAppBar(),
             CardSwiper(),
             ActionsButtons(),
+            Transactions(),
           ],
         ),
       ),
