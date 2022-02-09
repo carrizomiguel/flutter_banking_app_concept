@@ -19,7 +19,7 @@ class CardElement extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 card['bank'],
-                height: 60,
+                height: 45,
                 color: Colors.black87,
               ),
               const Spacer(),
@@ -28,7 +28,7 @@ class CardElement extends StatelessWidget {
                 style: const TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17,
+                  fontSize: 14,
                 ),
               ),
             ],
@@ -44,7 +44,7 @@ class CardElement extends StatelessWidget {
                     style: const TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
-                      fontSize: 17,
+                      fontSize: 14,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -53,14 +53,14 @@ class CardElement extends StatelessWidget {
                     style: const TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
-                      fontSize: 17,
+                      fontSize: 14,
                     ),
                   ),
                 ],
               ),
               const Spacer(),
               Container(
-                padding: const EdgeInsets.all(17),
+                padding: const EdgeInsets.all(15),
                 child: const Icon(
                   Icons.add,
                   color: Colors.white,
